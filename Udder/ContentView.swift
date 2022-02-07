@@ -14,7 +14,13 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.gray)
                 .padding()
-            Text("Fresh Milk On Demand.")
+            HStack {
+                Text("Fresh Milk On Demand.")
+                Image(systemName: "drop")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20, alignment: .center)
+            }
             
         }
     }
